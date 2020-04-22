@@ -1,0 +1,131 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    animation: transitionin 0.75s; 
+}
+
+body{
+    background: url("design/background8.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+#left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: transitionin 0.75s; 
+}
+
+#right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    animation: transitionin 0.75s; 
+}
+
+nav{
+    padding: 50px;
+    display: block;
+    z-index: 1;
+    animation: transitionin 0.75s; 
+}
+
+nav ul{
+    list-style-type: none;
+    float: right;
+    margin-top: -10px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav ul li a{
+    color:  black;
+    padding: 8px 10px;
+    font-size: 20px;
+}
+
+.active:hover{
+    font-weight: 700;
+}
+
+
+#logo{
+    font-size: 50px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    z-index: -1;
+    animation: transitionin 2s; 
+}
+
+.container{
+    text-align: center;
+    width: 60%;
+    margin: 175px auto;
+    animation: transitionin 2s; 
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+.container p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+@keyframes transitionin {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes transition2 {
+    0%{visibility: hidden; opacity: 0;}
+    75%{visibility: visible; opacity: 0;}
+    100%{visibility: visible; opacity: 1;}
+}
+
+   @keyframes transition3 {
+    0%{visibility: hidden; opacity: 0;}
+    50%{visibility: visible; opacity: 0;}
+    100%{visibility: visible; opacity: 1;}
+}
+
+#link{
+    animation: transition3 1s;
+}
+
+#link1{
+    animation: transition3 1.7s;
+}
+
+#link2{
+    animation: transition3 2.4s;
+}
+
+#link3{
+    animation: transition3 3.1s;
+}

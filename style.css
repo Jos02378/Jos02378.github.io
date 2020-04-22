@@ -1,0 +1,156 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    animation: transitionin 0.75s; 
+}
+
+body{
+    background: url("design/background4.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+#left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: left 1s; 
+}
+
+#right{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+    animation: right 1s; 
+}
+
+nav{
+    padding: 50px;
+    display: block;
+    z-index: 1;
+    animation: transitionin 0.75s; 
+}
+
+nav ul{
+    list-style-type: none;
+    float: right;
+    margin-top: -10px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav ul li a{
+    color:  black;
+    padding: 8px 10px;
+    font-size: 20px;
+}
+
+.active:hover{
+    font-weight: 700;
+}
+
+
+#logo{
+    font-size: 40px;
+    position: absolute;
+    left: 155px;
+    animation: transition2 1.5s;
+}
+
+#top{
+    width: 90px;
+    height: 100px;
+    top: 28px;
+    left: 40px;
+    position: absolute;
+    animation: transition2 1.5s;
+}
+
+.container{
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    top: 32%;
+    left: 268px;
+    animation: transition2 4.4s;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+.container p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+@keyframes transitionin {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes left {
+ 0%{top: 300px}
+ 60%{top: 300px}
+ 80%{top: -50px}
+ 90%{top: 50px}
+ 100%{top: 0}
+}
+
+@keyframes right {
+    0%{top: -500px}
+    60%{top: -500px}
+    80%{top: 50px}
+    90%{top: -50px}
+    100%{top: 0}
+   }
+
+   @keyframes transition2 {
+    0%{visibility: hidden; opacity: 0;}
+    75%{visibility: visible; opacity: 0;}
+    100%{visibility: visible; opacity: 1;}
+}
+
+   @keyframes transition3 {
+    0%{visibility: hidden; opacity: 0;}
+    50%{visibility: visible; opacity: 0;}
+    100%{visibility: visible; opacity: 1;}
+}
+
+#link{
+    animation: transition3 2.9s;
+}
+
+#link1{
+    animation: transition3 3.6s;
+}
+
+#link2{
+    animation: transition3 4.3s;
+}
+
+#link3{
+    animation: transition3 5s;
+}

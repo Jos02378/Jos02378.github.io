@@ -1,0 +1,699 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    animation: transitionin 0.75s; 
+}
+
+body{
+    background: url("design/background8.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+#right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    animation: transitionin 0.75s; 
+}
+
+nav{
+    padding: 50px;
+    display: block;
+    z-index: 1;
+    animation: transitionin 0.75s; 
+    margin-top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+    float: right;
+    margin-top: -10px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav ul li a{
+    color:  black;
+    padding: 8px 10px;
+    font-size: 20px;
+}
+
+.active:hover{
+    font-weight: 700;
+}
+
+
+#logo{
+    font-size: 50px;
+    position: absolute;
+    top: 120px;
+    right: 550px;
+    z-index: -1;
+    animation: transition3 3s; 
+}
+
+.container{
+    text-align: justify;
+    font-size: 14px;
+    width: 600px;
+    position: absolute;
+    right: 180px;
+    top: 195px;
+    animation: transition3 4s; 
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+.container p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+@keyframes transitionin {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes transition2 {
+    0%{visibility: hidden; opacity: 0;}
+    75%{visibility: visible; opacity: 0;}
+    100%{visibility: visible; opacity: 1;}
+}
+
+   @keyframes transition3 {
+    0%{visibility: hidden; opacity: 0;}
+    50%{visibility: visible; opacity: 0;}
+    100%{visibility: visible; opacity: 1;}
+}
+
+#link{
+    animation: transition3 5.7s;
+}
+
+#link1{
+    animation: transition3 6.4s;
+}
+
+#link2{
+    animation: transition3 7.1s;
+}
+
+#link3{
+    animation: transition3 7.8s;
+}
+
+.front, .back{
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+}
+
+.front{
+    visibility: hidden;
+}
+
+.back{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.card{
+    position: absolute;
+    left: 0;
+    height: 791px;
+    width: 565px;
+    top: 0px;
+}
+
+@keyframes animation{
+    0%{ visibility: hidden; transform: perspective(600px) rotateY(180deg);}
+    10%{transform: perspective(600px) rotateY(0deg)}
+}
+
+/* @keyframes animation2{
+    0%{ visibility: visible; transform: perspective(600px) rotateY(0deg);}
+    10%{transform: perspective(600px) rotateY(-180deg)}
+    20%{display: none; visibility: hidden;}
+    100%{display: none; visibility: hidden;}
+} */
+
+/* #profile{
+    height: 98px;
+    width: 113px;
+} */
+
+#profile2{
+    height: 105px;
+    width: 117px;
+}
+
+#profile3{
+    height: 105px;
+    width: 127px;
+}
+
+#profile4{
+    height: 116px;
+    width: 112px;
+}
+
+#profile5{
+    height: 115px;
+    width: 125px;
+}
+
+#profile6{
+    height: 98px;
+    width: 117px;
+}
+
+#profile7{
+    height: 117px;
+    width: 121px;
+}
+
+#profile8{
+    height: 110px;
+    width: 117px;    
+}
+
+#profile9{
+    height: 98px;
+    width: 114px;
+}
+
+#profile10{
+    height: 105px;
+    width: 114px;
+}
+
+#profile11{
+    height: 105px;
+    width: 120px;
+}
+
+#profile12{
+    height: 115px;
+    width: 117px;
+}
+
+#profile13{
+    height: 103px;
+    width: 113px;
+}
+
+#profile14{
+    height: 112px;
+    width: 125px;
+}
+
+#profile15{
+    height: 103px;
+    width: 123px;
+}
+
+#profile16{
+    height: 102px;
+    width: 115px;
+}
+
+#profile17{
+    height: 113px;
+    width: 133px;
+}
+
+#profile18{
+    height: 102px;
+    width: 132px;
+}
+
+#profile19{
+    height: 116px;
+    width: 122px;    
+}
+
+#profile20{
+    height: 128px;
+    width: 122px;    
+}
+
+#profile21{
+    height: 116px;
+    width: 130px;
+}
+
+#profile22{
+    height: 103px;
+    width: 112px;
+}
+
+#profile23{
+    height: 99px;
+    width: 113px;
+}
+
+#profile24{
+    height: 113px;
+    width: 124px;
+}
+
+#profile25{
+    height: 105px;
+    width: 116px;
+}
+
+#profile26{
+    height: 112px;
+    width: 125px;
+}
+
+#ani1{
+    animation: animation 4s;
+    position: absolute;
+    top: 94px;
+    left: -174px;
+}
+
+#flip1{
+    animation: animation2 4s;
+    position: absolute;
+    top: 90px;
+    left: 53px;
+}
+
+#ani2{
+    animation: animation 5s;
+    position: absolute;
+    top: 47px;
+    left: -88px;
+}
+
+#flip2{
+    animation: animation2 5s;
+    position: absolute;
+    top: 45px;
+    left: 140px;
+}
+
+#ani3{
+    animation: animation 6s;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+}
+
+#flip3{
+    animation: animation2 6s;
+    position: absolute;
+    top: 0px;
+    left: 226px;
+}
+
+#ani4{
+    animation: animation 7s;
+    position: absolute;
+    top: 188px;
+    left: -173px;
+}
+
+#flip4{
+    animation: animation2 7s;
+    position: absolute;
+    top: 184px;
+    left: 53px;
+}
+
+#ani5{
+    animation: animation 8s;
+    position: absolute;
+    top: 139px;
+    left: -88px;
+}
+
+#flip5{
+    animation: animation2 8s;
+    position: absolute;
+    top: 137px;
+    left: 140px;
+}
+
+#ani6{
+    animation: animation 9s;
+    position: absolute;
+    top: 95px;
+    left: -4px;
+}
+
+#flip6{
+    animation: animation2 9s;
+    position: absolute;
+    top: 92px;
+    left: 226px;
+}
+
+#ani7{
+    animation: animation 10s;
+    position: absolute;
+    top: 45px;
+    left: 80px;
+}
+
+#flip7{
+    animation: animation2 10s;
+    position: absolute;
+    top: 46px;
+    left: 311px;
+}
+
+#ani8{
+    animation: animation 11s;
+    position: absolute;
+    top: 282px;
+    left: -176px;
+}
+
+#flip8{
+    animation: animation2 11s;
+    position: absolute;
+    top: 273px;
+    left: 53px;
+}
+
+#ani9{
+    animation: animation 12s;
+    position: absolute;
+    top: 230px;
+    left: -89px;
+}
+
+#flip9{
+    animation: animation2 12s;
+    position: absolute;
+    top: 229px;
+    left: 140px;
+}
+
+#ani10{
+    animation: animation 13s;
+    position: absolute;
+    top: 188px;
+    left: -5px;
+}
+
+#flip10{
+    animation: animation2 13s;
+    position: absolute;
+    top: 184px;
+    left: 226px;
+}
+
+#ani11{
+    animation: animation 14s;
+    position: absolute;
+    top: 141px;
+    left: 79px;
+}
+
+#flip11{
+    animation: animation2 14s;
+    position: absolute;
+    top: 138px;
+    left: 312px;
+}
+
+#ani12{
+    animation: animation 15s;
+    position: absolute;
+    top: 90px;
+    left: 162px;
+}
+
+#flip12{
+    animation: animation2 15s;
+    position: absolute;
+    top: 91px;
+    left: 397px;
+}
+
+#ani13{
+    animation: animation 16s;
+    position: absolute;
+    top: 373px;
+    left: -174px;
+}
+
+#flip13{
+    animation: animation2 16s;
+    position: absolute;
+    top: 366px;
+    left: 53px;
+}
+
+#ani14{
+    animation: animation 17s;
+    position: absolute;
+    top: 326px;
+    left: -91px;
+}
+
+#flip14{
+    animation: animation2 17s;
+    position: absolute;
+    top: 320px;
+    left: 140px;
+}
+
+#ani15{
+    animation: animation 18s;
+    position: absolute;
+    top: 280px;
+    left: -5px;
+}
+
+#flip15{
+    animation: animation2 18s;
+    position: absolute;
+    top: 276px;
+    left: 226px;
+}
+
+#ani16{
+    animation: animation 19s;
+    position: absolute;
+    top: 236px;
+    left: 82px;
+}
+
+#flip16{
+    animation: animation2 19s;
+    position: absolute;
+    top: 230px;
+    left: 312px;
+}
+
+#ani17{
+    animation: animation 20s;
+    position: absolute;
+    top: 178px;
+    left: 161px;
+}
+
+#flip17{
+    animation: animation2 20s;
+    position: absolute;
+    top: 183px;
+    left: 397px;
+}
+
+#ani18{
+    animation: animation 21s;
+    position: absolute;
+    top: 463px;
+    left: -172px;
+}
+
+#flip18{
+    animation: animation2 16s;
+    position: absolute;
+    top: 458px;
+    left: 53px;
+}
+
+#ani19{
+    animation: animation 22s;
+    position: absolute;
+    top: 416px;
+    left: -88px;
+}
+
+#flip19{
+    animation: animation2 22s;
+    position: absolute;
+    top: 413px;
+    left: 140px;
+}
+
+#ani20{
+    animation: animation 23s;
+    position: absolute;
+    top: 372px;
+    left: -6px;
+}
+
+#flip20{
+    animation: animation2 23s;
+    position: absolute;
+    top: 368px;
+    left: 226px;
+}
+
+#ani21{
+    animation: animation 24s;
+    position: absolute;
+    top: 325px;
+    left: 79px;
+}
+
+#flip21{
+    animation: animation2 24s;
+    position: absolute;
+    top: 322px;
+    left: 312px;
+}
+
+#ani22{
+    animation: animation 25s;
+    position: absolute;
+    top: 276px;
+    left: 159px;
+}
+
+#flip22{
+    animation: animation2 25s;
+    position: absolute;
+    top: 275px;
+    left: 397px;
+}
+
+#ani23{
+    animation: animation 26s;
+    position: absolute;
+    top: 511px;
+    left: -92px;
+}
+
+#flip23{
+    animation: animation2 26s;
+    position: absolute;
+    top: 507px;
+    left: 140px;
+}
+
+#ani24{
+    animation: animation 27s;
+    position: absolute;
+    top: 468px;
+    left: -9px;
+}
+
+#flip24{
+    animation: animation2 27s;
+    position: absolute;
+    top: 460px;
+    left: 226px;
+}
+
+#ani25{
+    animation: animation 28s;
+    position: absolute;
+    top: 425px;
+    left: 79px;
+}
+
+#flip25{
+    animation: animation2 28s;
+    position: absolute;
+    top: 414px;
+    left: 312px;
+}
+
+#ani26{
+    animation: animation 29s;
+    position: absolute;
+    top: 371px;
+    left: 163px;
+}
+
+#flip26{
+    animation: animation2 29s;
+    position: absolute;
+    top: 367px;
+    left: 397px;
+}
+
+#ani27{
+    animation: animation 30s;
+    position: absolute;
+    top: 562px;
+    left: -2px;
+}
+
+#flip27{
+    animation: animation2 30s;
+    position: absolute;
+    top: 552px;
+    left: 226px;
+}
+
+#ani28{
+    animation: animation 31s;
+    position: absolute;
+    top: 511px;
+    left: 81px;
+}
+
+#flip28{
+    animation: animation2 31s;
+    position: absolute;
+    top: 506px;
+    left: 312px;
+}
+
+#ani29{
+    animation: animation 32s;
+    position: absolute;
+    top: 466px;
+    left: 165px;
+}
+
+#flip29{
+    animation: animation2 32s;
+    position: absolute;
+    top: 459px;
+    left: 397px;
+}
