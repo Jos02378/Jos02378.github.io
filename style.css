@@ -14,7 +14,7 @@ a{
 }
 
 body{
-    background: url("design/background4.svg");
+    background: url("picture/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 0;
@@ -26,6 +26,8 @@ body{
     left: 0;
     z-index: -1;
     animation: left 1s; 
+
+    display: none;
 }
 
 #right{
@@ -34,6 +36,8 @@ body{
     right: 0;
     z-index: -1;
     animation: right 1s; 
+
+    display: none;
 }
 
 nav{
@@ -66,36 +70,56 @@ nav ul li a{
 
 
 #logo{
+    font-size: 20px;
+    position: absolute;
+    left: 80px;
+    top: 33px;
+    animation: transition2 1.5s;
+}
+
+/* #logo{
     font-size: 40px;
     position: absolute;
     left: 155px;
     animation: transition2 1.5s;
-}
+} */
 
 #top{
+    width: 55px;
+    height: 60px;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    animation: transition2 1.5s;
+}
+
+/* #top{
     width: 90px;
     height: 100px;
     top: 28px;
     left: 40px;
     position: absolute;
     animation: transition2 1.5s;
-}
+} */
 
 .container{
     text-align: center;
-    width: 60%;
+    /* width: 60%;
     position: absolute;
     top: 32%;
-    left: 268px;
+    left: 268px; */
     animation: transition2 4.4s;
+
+    padding-left: 20px;
+    padding-right: 50px;
 }
 
 h1{
-    font-size: 3.5em;
+    font-size: 40px;
 }
 
 .container p {
-    font-size: 1.3em;
+    font-size: 20px;
     line-height: 1.4em;
 }
 
@@ -153,4 +177,8 @@ h1{
 
 #link3{
     animation: transition3 5s;
+}
+
+@media only screen and (min-width: ) {
+
 }
