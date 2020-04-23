@@ -14,7 +14,7 @@ a{
 }
 
 body{
-    background: url("picture/background.png");
+    background: url("./picture/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 0;
@@ -104,14 +104,11 @@ nav ul li a{
 
 .container{
     text-align: center;
-    /* width: 60%;
     position: absolute;
-    top: 32%;
-    left: 268px; */
+    top: 27%;
     animation: transition2 4.4s;
-
-    padding-left: 20px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 h1{
@@ -179,6 +176,47 @@ h1{
     animation: transition3 5s;
 }
 
-@media only screen and (min-width: ) {
+/* @media only screen and (min-width: ) {
 
+} */
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    right: -200px;
+    transition: all 500ms linear;
+    z-index: 3;
+    top: 0;
+}
+
+#sidebar.active{
+    right: 0px;
+}
+
+#sidebar ul li{
+    color: rgba(230,230,230,0.9);
+    list-style: none;
+    padding:15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+    margin-left: -40px;
+}
+
+#sidebar ul{
+    margin-top: -35px;
+}
+
+#sidebar .toggle-btn{
+    position: relative;
+    right: 60px;
+    top: 27px
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: white;
+    margin: 5px 0px;
 }
