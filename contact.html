@@ -41,13 +41,14 @@
        <h1>Contact me</h1>
     </div>
 
-    <div class="form">
-        <form>
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <input type="text" id="msg" placeholder="Message" />
+    <div class="form" method="post">
+        <form method="post" action="send.php">
+            <input type="text" placeholder="Name" name="name" required/>
+            <input type="text" placeholder="Email" name="email" required/>
+            <input type="text" id="msg" placeholder="Message" name="message" required/>
         </form>
-        <button type="button">Submit</button>
+        <!-- <button type="button">Submit</button> -->
+        <input type="submit" class="button" value="Submit">
     </div>
 
 </body>
