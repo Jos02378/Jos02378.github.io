@@ -3,7 +3,7 @@ body, html{
     margin: 0;
     color: white;
     font-family: 'Montserrat';
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -14,8 +14,8 @@ a{
 }
 
 body{
-    background: url("design/background8.svg");
-    background-repeat: no-repeat;
+    background: url("./picture/background.png");
+    background-repeat: repeat;
     background-size: cover;
     padding-bottom: 0;
 }
@@ -26,6 +26,7 @@ body{
     right: 0;
     z-index: -1;
     animation: transitionin 0.75s; 
+    display: none;
 }
 
 nav{
@@ -59,22 +60,35 @@ nav ul li a{
 
 
 #logo{
-    font-size: 50px;
+    font-size: 40px;
     position: absolute;
-    top: 120px;
-    right: 550px;
+    top: 20px;
+    left: 15px;
     z-index: -1;
     animation: transition3 3s; 
+}
+
+#menu{
+    animation: transition3 4s;
+}
+
+#photo{
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    animation: transition3 5s; 
 }
 
 .container{
     text-align: justify;
     font-size: 14px;
-    width: 600px;
+    width: 300px;
     position: absolute;
-    right: 180px;
-    top: 195px;
-    animation: transition3 4s; 
+    right: 35px;
+    top: 500px;
+    animation: transition3 6s; 
 }
 
 h1{
@@ -112,18 +126,22 @@ h1{
 
 #link{
     animation: transition3 5.7s;
+    display: none;
 }
 
 #link1{
     animation: transition3 6.4s;
+    display: none;
 }
 
 #link2{
     animation: transition3 7.1s;
+    display: none;
 }
 
 #link3{
     animation: transition3 7.8s;
+    display: none;
 }
 
 .front, .back{
@@ -148,6 +166,15 @@ h1{
     height: 791px;
     width: 565px;
     top: 0px;
+    display: none;
+}
+
+#lefty{
+    display: none;
+}
+
+#righty{
+    display: none;
 }
 
 @keyframes animation{
@@ -696,4 +723,237 @@ h1{
     position: absolute;
     top: 459px;
     left: 397px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    right: -200px;
+    transition: all 500ms linear;
+    z-index: 3;
+    top: 0;
+}
+
+#sidebar.active{
+    right: 0px;
+}
+
+#sidebar ul li{
+    color: rgba(230,230,230,0.9);
+    list-style: none;
+    padding:15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+    margin-left: -40px;
+}
+
+#sidebar ul{
+    margin-top: -35px;
+}
+
+#sidebar .toggle-btn{
+    position: relative;
+    right: 60px;
+    top: 27px
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: white;
+    margin: 5px 0px;
+}
+
+#top{
+    width: 55px;
+    height: 60px;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    animation: transition2 1.5s;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #sidebar {
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        background: #151719;
+        right: -300px;
+        transition: all 500ms linear;
+        z-index: 3;
+        top: 0;
+    }
+
+    #lefty{
+        display: none;
+    }
+    
+    #righty{
+        display: none;
+    }
+    
+    #sidebar.active{
+        right: 0px;
+    }
+    
+    #sidebar ul li{
+        color: rgba(230,230,230,0.9);
+        list-style: none;
+        padding:15px 10px;
+        border-bottom: 1px solid rgba(100,100,100,0.3);
+        margin-left: -40px;
+        font-size: 26px;
+    }
+    
+    #sidebar ul{
+        margin-top: -47px;
+    }
+
+    #sidebar .toggle-btn span{
+        width: 45px;
+        height: 7px;
+        margin: 7px 0px;
+    }
+
+    #sidebar .toggle-btn{
+        position: relative;
+        right: 70px;
+        top: 37px
+    }
+
+    #logo{
+        font-size: 60px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+        animation: transition3 3s; 
+    }
+
+    #photo{
+        width: 700px;
+        height: 900px;
+        position: absolute;
+        top: 75px;
+        left: 30px;
+        animation: transition3 5s; 
+    }
+
+    .container{
+        text-align: justify;
+        font-size: 14px;
+        width: 600px;
+        position: absolute;
+        left: 84px;
+        top: 900px;
+        animation: transition3 6s; 
+    }
+    
+    h1{
+        font-size: 3.5em;
+    }
+    
+    .container p {
+        font-size:22px;
+        line-height: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body{
+        background: url("design/background8.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 0;
+    }
+
+    body, html{
+        height: 100%;
+        margin: 0;
+        color: white;
+        font-family: 'Montserrat';
+        overflow: hidden;
+    }
+
+    #photo{
+        display: none;
+    }
+
+    #link{
+        animation: transition3 2.9s;
+        display: unset;
+    }
+    
+    #link1{
+        animation: transition3 3.6s;
+        display: unset;
+    }
+    
+    #link2{
+        animation: transition3 4.3s;
+        display: unset;
+    }
+    
+    #link3{
+        animation: transition3 5s;
+        display: unset;
+    }
+
+    #logo{
+        font-size: 50px;
+        position: absolute;
+        top: 119px;
+        left: 563px;
+        z-index: -1;
+        animation: transition3 3s; 
+        display: block;
+    }
+
+    .container{
+        font-size: 14px;
+        display: block; 
+        text-align: justify;
+        width: 600px;
+        position: absolute;
+        left: 584px;
+        top: 193px;
+        animation: transition3 4s;
+        z-index: 1;
+    }
+    
+    h1{
+        font-size: 3.5em;
+    }
+    
+    .container p {
+        font-size: 1.3em;
+        line-height: 1.4em;
+    }
+
+    .card{
+        display: block;
+    }
+
+    #sidebar{
+        display: none;
+    }
+
+    #right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        animation: transitionin 0.75s; 
+        display: unset;
+    }
+
+    nav ul{
+        list-style-type: none;
+        float: right;
+        margin-top: -10px;
+    }
 }
