@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
-    <title>Joseph's</title>
+    <script src="index.js"></script>
+    <title>Joseph's Website</title>
 </head>
 <body>
     <a href="#" id="logo">About me</a>
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span id="menu"></span>
+            <span id="menu"></span>
+            <span id="menu"></span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li> 
+            <li><a href="about.html" class="active">About me</a></li> 
+            <li><a href="services.html" class="active">Projects</a></li> 
+            <li><a href="contact.html" class="active">Contact</a></li> 
+        </ul>
+    </div>
+
 
     <nav>
         <ul>
@@ -19,6 +35,8 @@
     </nav>
 
     <img src="design/right.svg" id="right">
+
+    <img src="picture/myphoto5.png" id="photo">
 
     <div class="card">
         <div class="front" id="flip1">
