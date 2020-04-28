@@ -14,7 +14,7 @@ a{
 }
 
 body{
-    background: url("design/background8.svg");
+    background: url("./picture/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 0;
@@ -22,18 +22,18 @@ body{
 
 #left{
     position: absolute;
-    top: 0;
+    top: 400px;
     left: 0;
     z-index: -1;
-    animation: transitionin 0.75s; 
+    animation: transition3 4s; 
 }
 
 #right{
     position: absolute;
-    top: 0;
+    top: 80px;
     right: 0;
     z-index: -1;
-    animation: transitionin 0.75s; 
+    animation: transition3 4s; 
 }
 
 nav{
@@ -77,14 +77,15 @@ nav ul li a{
 .container{
     text-align: center;
     position: absolute;
-    top: 10%;
-    left: 18%;
-    animation: transitionin 2s; 
+    top: 0px;
+    left: 18px;
+    animation: transition3 2s; 
     color: white;
 }
 
 h1{
-    font-size: 3.5em;
+    font-size: 37px;
+    font-weight: 500;
 }
 
 .container p {
@@ -128,26 +129,31 @@ h1{
 
 #link{
     animation: transition3 1s;
+    display: none;
 }
 
 #link1{
     animation: transition3 1.7s;
+    display: none;
 }
 
 #link2{
     animation: transition3 2.4s;
+    display: none;
 }
 
 #link3{
     animation: transition3 3.1s;
+    display: none;
 }
 
 .form{
     position: absolute;
-    top: 57%;
-    left: 45%;
+    top: 330px;
+    left: 190px;
     transform: translate(-50%, -50%);
-    animation: transitionin2 2s;
+    animation: transition3 5s;
+    width: 300px;
 }
 
 input{
@@ -158,12 +164,12 @@ input{
     border: transparent;
     border-bottom: 1px solid white;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 ::-webkit-input-placeholder{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 2px;
 }
 
@@ -187,4 +193,333 @@ button{
 button:hover{
     background: white;
     color: #2aa9ff;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    right: -200px;
+    transition: all 500ms linear;
+    z-index: 3;
+    top: 0;
+}
+
+#sidebar.active{
+    right: 0px;
+}
+
+#sidebar ul li{
+    color: rgba(230,230,230,0.9);
+    list-style: none;
+    padding:15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+    margin-left: -40px;
+}
+
+#sidebar ul{
+    margin-top: -35px;
+}
+
+#sidebar .toggle-btn{
+    position: relative;
+    right: 60px;
+    top: 27px
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: white;
+    margin: 5px 0px;
+}
+
+#menu{
+    animation: transition3 3s;
+}
+
+#lefty{
+    display: none;
+}
+
+#righty{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #sidebar {
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        background: #151719;
+        right: -300px;
+        transition: all 500ms linear;
+        z-index: 3;
+        top: 0;
+    }
+    
+    #sidebar.active{
+        right: 0px;
+    }
+    
+    #sidebar ul li{
+        color: rgba(230,230,230,0.9);
+        list-style: none;
+        padding:15px 10px;
+        border-bottom: 1px solid rgba(100,100,100,0.3);
+        margin-left: -40px;
+        font-size: 26px;
+    }
+    
+    #sidebar ul{
+        margin-top: -47px;
+    }
+
+    #sidebar .toggle-btn span{
+        width: 45px;
+        height: 7px;
+        margin: 7px 0px;
+    }
+
+    #sidebar .toggle-btn{
+        position: relative;
+        right: 70px;
+        top: 37px
+    }
+
+    .container{
+        text-align: center;
+        position: absolute;
+        top: -18px;
+        left: 18px;
+        animation: transition3 2s; 
+        color: white;
+    }
+    
+    h1{
+        font-size: 60px;
+        font-weight: 500;
+    }
+
+    .form{
+        position: absolute;
+        top: 500px;
+        left: 385px;
+        transform: translate(-50%, -50%);
+        animation: transition3 5s;
+        width: 550px;
+    }
+    
+    input{
+        width: 100%;
+        height: 50px;
+        margin: 20px 0;
+        background: transparent;
+        border: transparent;
+        border-bottom: 1px solid white;
+        color: white;
+        font-size: 40px;
+    }
+    
+    ::-webkit-input-placeholder{
+        color: white;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    
+    #msg{
+        margin-top: 40px;
+    }
+    
+    button{
+        padding: 15px 32px;
+        font-size: 25px;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 4px;
+        margin-top: 30px;
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        left: 30%;
+    }
+    
+    button:hover{
+        background: white;
+        color: #2aa9ff;
+    }
+
+    #left{
+        position: absolute;
+        top: 750px;
+        left: 0;
+        z-index: -1;
+        animation: transition3 4s; 
+    }
+    
+    #right{
+        position: absolute;
+        top: 120px;
+        right: 0;
+        z-index: -1;
+        animation: transition3 4s; 
+    }
+
+    #lefty{
+        display: none;
+    }
+    
+    #righty{
+        display: none;
+    }
+
+    #link{
+        animation: transition3 1s;
+        display: none;
+    }
+    
+    #link1{
+        animation: transition3 1.7s;
+        display: none;
+    }
+    
+    #link2{
+        animation: transition3 2.4s;
+        display: none;
+    }
+    
+    #link3{
+        animation: transition3 3.1s;
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    #link{
+        animation: transition3 1s;
+        display: block;
+    }
+    
+    #link1{
+        animation: transition3 1.7s;
+        display: block;
+    }
+    
+    #link2{
+        animation: transition3 2.4s;
+        display: block;
+    }
+    
+    #link3{
+        animation: transition3 3.1s;
+        display: block;
+    }  
+
+    body{
+        background: url("design/background8.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 0;
+    }
+
+    #lefty{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        animation: transitionin 0.75s; 
+        display: block;
+    }
+    
+    #righty{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        animation: transitionin 0.75s; 
+        display: block;
+    }
+
+    #sidebar{
+        display: none
+    }
+
+    #left{
+        display: none;
+    }
+    
+    #right{
+        display: none;
+    }
+
+    .container{
+        text-align: center;
+        position: absolute;
+        top: 10%;
+        left: 18%;
+        animation: transitionin 2s; 
+        color: white;
+    }
+
+    h1{
+        font-size: 3.5em;
+    }
+
+    nav ul{
+        list-style-type: none;
+        float: right;
+        margin-top: -18px;
+    }
+
+    .form{
+        position: absolute;
+        top: 57%;
+        left: 45%;
+        width: 738px;
+        transform: translate(-50%, -50%);
+        animation: transitionin2 2s;
+    }
+    
+    input{
+        width: 100%;
+        height: 40px;
+        margin: 20px 0;
+        background: transparent;
+        border: transparent;
+        border-bottom: 1px solid white;
+        color: white;
+        font-size: 20px;
+    }
+    
+    ::-webkit-input-placeholder{
+        color: white;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    #msg{
+        margin-top: 40px;
+    }
+    
+    button{
+        padding: 15px 32px;
+        font-size: 20px;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 4px;
+        margin-top: 30px;
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        left: 30%;
+    }
+    
+    button:hover{
+        background: white;
+        color: #2aa9ff;
+    }
 }
