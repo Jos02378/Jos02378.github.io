@@ -4,7 +4,10 @@ body, html{
     color: white;
     font-family: 'Montserrat';
     overflow: hidden;
-    
+}
+
+#menu{
+    animation: transition3 2.9s;
 }
 
 a{
@@ -14,7 +17,7 @@ a{
 }
 
 body{
-     background: url("./picture/background.png");
+    background: url("./picture/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 0;
@@ -25,8 +28,6 @@ body{
     top: 0;
     left: 0;
     z-index: -1;
-    animation: left 1s; 
-
     display: none;
 }
 
@@ -35,8 +36,6 @@ body{
     top: 0px;
     right: 0;
     z-index: -1;
-    animation: right 1s; 
-
     display: none;
 }
 
@@ -50,7 +49,7 @@ nav{
 nav ul{
     list-style-type: none;
     float: right;
-    margin-top: -10px;
+    margin-top: -18px;
 }
 
 nav ul li{
@@ -68,7 +67,6 @@ nav ul li a{
     font-weight: 700;
 }
 
-
 #logo{
     font-size: 20px;
     position: absolute;
@@ -76,13 +74,6 @@ nav ul li a{
     top: 33px;
     animation: transition2 1.5s;
 }
-
-/* #logo{
-    font-size: 40px;
-    position: absolute;
-    left: 155px;
-    animation: transition2 1.5s;
-} */
 
 #top{
     width: 55px;
@@ -93,20 +84,11 @@ nav ul li a{
     animation: transition2 1.5s;
 }
 
-/* #top{
-    width: 90px;
-    height: 100px;
-    top: 28px;
-    left: 40px;
-    position: absolute;
-    animation: transition2 1.5s;
-} */
-
 .container{
     text-align: center;
     position: absolute;
     top: 27%;
-    animation: transition2 4.4s;
+    animation: transition2 5s;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -148,6 +130,22 @@ h1{
     100%{top: 0}
    }
 
+   @keyframes lefty {
+    0%{top: 1200px}
+    67%{top: 1200px}
+    80%{top: 640px}
+    90%{top: 720px}
+    100%{top: 680}
+   }
+   
+   @keyframes righty {
+       0%{top: -200px}
+       67%{top: -200px}
+       80%{top: 190px}
+       90%{top: 110px}
+       100%{top: 150}
+      }
+
    @keyframes transition2 {
     0%{visibility: hidden; opacity: 0;}
     75%{visibility: visible; opacity: 0;}
@@ -162,23 +160,23 @@ h1{
 
 #link{
     animation: transition3 2.9s;
+    display: none;
 }
 
 #link1{
     animation: transition3 3.6s;
+    display: none;
 }
 
 #link2{
     animation: transition3 4.3s;
+    display: none;
 }
 
 #link3{
     animation: transition3 5s;
+    display: none;
 }
-
-/* @media only screen and (min-width: ) {
-
-} */
 
 #sidebar {
     position: fixed;
@@ -220,3 +218,227 @@ h1{
     background: white;
     margin: 5px 0px;
 }
+
+#lefty{
+    display: none;
+}
+
+#righty{
+    display: none;
+}
+
+#left2{
+    display: block;
+    position: absolute;
+    top: 420px;
+    left: 0;
+    z-index: -1;
+    animation: transition2 3s;
+}
+
+#right2{
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: -1;
+    animation: transition2 4s;
+}
+
+@media only screen and (min-width: 768px) {
+    #left2{
+        display: block;
+        position: absolute;
+        top: 680px;
+        left: 0;
+        z-index: -1;
+        animation: lefty 2s; 
+    }
+    
+    #right2{
+        display: block;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        z-index: -1;
+        animation: righty 2s; 
+    }
+
+    .container{
+        text-align: center;
+        position: absolute;
+        top: 390px;
+        animation: transition2 4.5s;
+    }
+
+    #logo{
+        font-size: 40px;
+        position: absolute;
+        left: 120px;
+        top: 40px;
+        animation: transition2 2.5s;
+    }
+    
+    #top{
+        width: 90px;
+        height: 100px;
+        top: 15px;
+        left: 15px;
+        position: absolute;
+        animation: transition2 2.5s;
+    }
+
+    #sidebar .toggle-btn span{
+        width: 45px;
+        height: 7px;
+        margin: 7px 0px;
+    }
+
+    #sidebar .toggle-btn{
+        position: relative;
+        right: 70px;
+        top: 37px
+    }
+
+    h1{
+        font-size: 55px;
+    }
+    
+    .container p {
+        font-size: 26px;
+        line-height: 1.4em;
+    }
+
+    #menu{
+        animation: transition3 4.5s;
+    }
+
+    #sidebar {
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        background: #151719;
+        right: -300px;
+        transition: all 500ms linear;
+        z-index: 3;
+        top: 0;
+    }
+    
+    #sidebar.active{
+        right: 0px;
+    }
+    
+    #sidebar ul li{
+        color: rgba(230,230,230,0.9);
+        list-style: none;
+        padding:15px 10px;
+        border-bottom: 1px solid rgba(100,100,100,0.3);
+        margin-left: -40px;
+        font-size: 26px;
+    }
+    
+    #sidebar ul{
+        margin-top: -47px;
+    }
+
+    #lefty{
+        display: none;
+    }
+    
+    #righty{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    body{
+        background: url("design/background4.svg");
+    }
+
+    #left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        animation: left 1s; 
+    }
+    
+    #right{
+        position: absolute;
+        top: 0px;
+        right: 0;
+        z-index: -1;
+        display: block;
+        animation: right 1s; 
+    }
+
+    #left2{
+        display: none;
+    }
+
+    #right2{
+        display: none;
+    }
+
+    #sidebar{
+        display: none;
+    }
+
+    .container{
+        text-align: center;
+        width: 60%;
+        position: absolute;
+        top: 32%;
+        left: 238px;
+        animation: transition2 4.4s;
+    }
+    
+    h1{
+        font-size: 3.5em;
+    }
+    
+    .container p {
+        font-size: 1.3em;
+        line-height: 1.4em;
+    }
+
+    #link{
+        animation: transition3 2.9s;
+        display: block;
+    }
+    
+    #link1{
+        animation: transition3 3.6s;
+        display: block;
+    }
+    
+    #link2{
+        animation: transition3 4.3s;
+        display: block;
+    }
+    
+    #link3{
+        animation: transition3 5s;
+        display: block;
+    }
+    
+    #logo{
+        font-size: 40px;
+        position: absolute;
+        top: 50px;
+        left: 155px;
+        animation: transition2 1.5s;
+    }
+
+    #top{
+        width: 90px;
+        height: 100px;
+        top: 28px;
+        left: 40px;
+        position: absolute;
+        animation: transition2 1.5s;
+    }
+}
+
