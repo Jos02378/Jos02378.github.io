@@ -177,7 +177,7 @@ input{
     margin-top: 40px;
 }
 
-button{
+.button{
     padding: 15px 32px;
     font-size: 20px;
     background: transparent;
@@ -188,9 +188,12 @@ button{
     font-family: 'Montserrat';
     font-weight: 500;
     left: 30%;
+    text-align: center;
+    width: 150px;
+    height: 60px;
 }
 
-button:hover{
+.button:hover{
     background: white;
     color: #2aa9ff;
 }
@@ -334,7 +337,7 @@ button:hover{
         margin-top: 40px;
     }
     
-    button{
+    .button{
         padding: 15px 32px;
         font-size: 25px;
         background: transparent;
@@ -345,9 +348,12 @@ button:hover{
         font-family: 'Montserrat';
         font-weight: 500;
         left: 30%;
+        text-align: center;
+        width: 150px;
+        height: 60px;
     }
     
-    button:hover{
+    .button:hover{
         background: white;
         color: #2aa9ff;
     }
@@ -505,7 +511,7 @@ button:hover{
         margin-top: 40px;
     }
     
-    button{
+    .button{
         padding: 15px 32px;
         font-size: 20px;
         background: transparent;
@@ -516,9 +522,12 @@ button:hover{
         font-family: 'Montserrat';
         font-weight: 500;
         left: 30%;
+        text-align: center;
+        width: 150px;
+        height: 60px;
     }
     
-    button:hover{
+    .button:hover{
         background: white;
         color: #2aa9ff;
     }
