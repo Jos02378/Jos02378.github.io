@@ -8,7 +8,7 @@ body, html{
 }
 
 a{
-    color: white;
+    color: red;
     text-decoration: none;
     animation: transitionin 0.75s; 
 }
